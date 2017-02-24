@@ -11,6 +11,7 @@ Displaying data from the REST API using AngularJS
 
 AngularJS form validation
 
+AngularJS route
 
 ## Motivation
 
