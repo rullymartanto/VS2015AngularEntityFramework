@@ -1,7 +1,16 @@
 
 ## Code Example
 
-This is code sample for angular, web api and entity framework build on visual studio 2015 web application
+This is code sample for angular, web api and entity framework build on visual studio 2015 web application 
+
+Visual Studio 2015 AngularJS backend (REST API)
+
+AngularJS app.js
+
+Displaying data from the REST API using AngularJS
+
+AngularJS form validation
+
 
 ## Motivation
 
