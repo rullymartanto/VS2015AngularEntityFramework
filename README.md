@@ -13,6 +13,9 @@ AngularJS form validation
 
 AngularJS route
 
+Entity Framework
+
+
 ## Motivation
 
 Sample who looking for code sample who working with new visual studio, entity framework and angularjs
