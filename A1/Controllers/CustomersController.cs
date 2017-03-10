@@ -32,7 +32,7 @@ namespace A1.Controllers
         }
 
         // POST: api/Customers
-        public void Post([FromBody]CustomerModel c)
+        public void Post(CustomerModel c)
         {
             CustomerModel UPV = new CustomerModel();
             CustomerModel cs = UM.GetCustomerProfile(c.customerNumber);
@@ -49,7 +49,7 @@ namespace A1.Controllers
 
         
         // PUT: api/Customers/5
-        public void Put(int id, [FromBody]CustomerModel c)
+        public void Put(int id, CustomerModel c)
         {
             CustomerModel UPV = new CustomerModel();
             CustomerModel cs = UM.GetCustomerProfile(id);
