@@ -1,10 +1,13 @@
-﻿using A1.Models;
+using A1.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Web.Http;
+using System.Web.Script.Serialization;
 
 namespace A1.Controllers
 {
@@ -12,9 +15,22 @@ namespace A1.Controllers
     {
         CustomerEntity UM = new CustomerEntity();
         // GET: api/Customers
+        //public HttpResponseMessage Get()
+        //{
+        //    CustomerDataView UDV = UM.GetCustomerDataView();
+        //    var json = new JavaScriptSerializer().Serialize(UDV.CustomerProfile);
+
+        //    var response = Request.CreateResponse(HttpStatusCode.OK);
+        //    response.Content = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
+        //    Console.WriteLine(json);
+        //    return response;
+
+
+        //}
         public IEnumerable<CustomerModel> Get()
         {
             CustomerDataView UDV = UM.GetCustomerDataView();
+
             return UDV.CustomerProfile;
         }
 
@@ -64,3 +80,4 @@ namespace A1.Controllers
         }
     }
 }
+
