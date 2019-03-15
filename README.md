@@ -13,8 +13,6 @@ AngularJS form validation
 
 AngularJS route
 
-JSON get return json using HttpResponseMessage
-
 Entity Framework
 
 
